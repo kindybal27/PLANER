@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planer dzienny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formularz">
+        <h1>Co na dziś planujesz?</h1>
+        <form action="planowanie_dzien.php" method="post">
+            <label for="godzina_s">Godzina rozpoczęcia: </label>
+            <input type="time" id="godzina_s" name="godzina_s" required>
+            <br>
+            <label for="godzina_k">Godzina zakończenia: </label>
+            <input type="time" id="godzina_k" name="godzina_k" required>
+            <br><br>
+            <label for="plan">Twój plan: </label>
+            <input type="text" id="plan" name="plan" required><br>
+            <br><br>
+            <label for="kategoria">Wybierz kategorię: </label>
+            <select name="kategoria" id="kategoria" required>
+                <option value="1">Ogólne</option>
+                <option value="2">Ważne</option>
+                <option value="3">Pilne</option>
+            </select>
+            <br><br>
+            <button type="submit" id="zaplanuj">Zaplanuj!</button>
+        </form>
+    </div>
+</body>
+</html>
